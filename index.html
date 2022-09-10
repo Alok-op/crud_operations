@@ -15,12 +15,47 @@
      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
-    <h1>Hello World!</h1>
+    <div class="container">
+        <div class="title">
+            <h1 class="text-secondary pb-2 text-center">CRUD Operation</h1>
+        </div>
+        <div class="row mt-5">
+            <form id="countryForm" class="d-flex justify-content-between"  autocomplete="off">
+                <div class="col-sm-6">  
+                    <input type="text" class="form-control" id="countryName" placeholder="Enter Country">
+                </div>
+                <div class="col-sm-5">
+                    <button type="submit" class="btn btn-info text-white"><i class="fa fa-plus pe-2"></i>Add</button>
+                    <button class="btn btn-success"> <i class="fa fa-pencil-square-o pe-2"></i>Edit</button>
+                </div>
+            </form>
+        </div>
+        <div class="row mt-5">
+            <div class="col-sm-7">
+                <table class="table">
+                    <thead class="table-dark">
+                        <tr>
+                            <th>Country Name</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead> 
+                    <tbody>
+                        <tr>
+                            <td>India</td>
+                            <td>
+                                <button class="btn btn-success btn-sm"> <i class="fa fa-pencil-square-o pe-1"></i>Edit</button>
+                                <button class="btn btn-danger btn-sm"><i class="fa fa-trash-o pe-1"></i>Delete</button>
+                            </td>
+                        </tr>
+                    </tbody>   
+                </table>
+            </div>
+           
+        </div>
+    </div>
 
 
 
-
-    
     <script src="index.js"></script>
 </body>
 </html>
